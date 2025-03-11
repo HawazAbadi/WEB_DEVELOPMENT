@@ -1,6 +1,5 @@
 
-
-/* 🔹 Reset Styles */
+/* 🔹 RESET STYLES */
 * {
     margin: 0;
     padding: 0;
@@ -8,11 +7,503 @@
     font-family: Arial, sans-serif;
 }
 
-/* 🔹 Body Styling */
+/* 🔹 BODY STYLING */
 body {
     text-align: center;
     background: #f4f4f4;
     padding-top: 80px; /* Prevents content from hiding under navbar */
+}
+
+/* 🔹 Full-Screen Background */
+body {
+    background-image: url('../images/Vol.jpg'); /* Make sure the path is correct */
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed; /* Keeps the background still when scrolling */
+}
+
+
+/***************************************  about ********************************************/
+/* 🔹 NAVIGATION BAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+/* 🔹 ABOUT SECTION */
+.about-content {
+    max-width: 800px;
+    margin: 100px auto 40px auto; /* Pushes content down due to fixed navbar */
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    line-height: 1.8;
+    color: #333;
+}
+
+.about-content h1 {
+    font-size: 32px;
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.about-content h2 {
+    font-size: 24px;
+    color: #008CBA;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* 🔹 LIST STYLES */
+.about-content ul,
+.about-content ol {
+    margin: 15px 0;
+    padding-left: 25px;
+}
+
+.about-content li {
+    margin-bottom: 8px;
+}
+
+/* 🔹 CALL TO ACTION BUTTON */
+.cta-button {
+    display: inline-block;
+    background: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background: #388E3C;
+}
+
+/* 🔹 RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about-content {
+        width: 90%;
+    }
+}
+
+
+
+/***************************** contact *************************/
+/* 🔹 NAVIGATION BAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+/* 🔹 CONTACT HEADER */
+.contact-header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #008CBA;
+    color: white;
+    border-radius: 8px;
+    margin: 100px auto 20px auto;
+    max-width: 800px;
+}
+
+/* 🔹 CONTACT CONTAINER */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 CONTACT INFO */
+.contact-info {
+    width: 45%;
+    text-align: left;
+}
+
+.contact-info h2 {
+    color: #4CAF50;
+    margin-top: 15px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #008CBA;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* 🔹 CONTACT FORM */
+.contact-form {
+    width: 50%;
+}
+
+.contact-form h2 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background: #388E3C;
+}
+
+/* 🔹 RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-info, .contact-form {
+        width: 90%;
+    }
+}
+
+/****************************** dashboard ***********************/
+
+
+/* 🔹 NAVIGATION BAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+/* 🔹 DASHBOARD SECTION */
+.dashboard {
+    max-width: 800px;
+    margin: 100px auto 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.dashboard p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* 🔹 APPLICATION LIST */
+#applicationList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#applicationList li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 🔹 CLEAR APPLICATIONS BUTTON */
+.clear-button {
+    background: #D9534F;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.clear-button:hover {
+    background: #C9302C;
+}
+
+/* 🔹 FOOTER */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin-bottom: 5px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* 🔹 RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .dashboard {
+        width: 90%;
+    }
+    
+    .footer-links {
+        display: block;
+    }
+}
+
+/******************************** index ****************************/
+
+
+/* 🔹 NAVIGATION BAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+/* 🔹 MENU TOGGLE (For Small Screens) */
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: none;
+    padding: 10px;
+    display: none;
+}
+
+/* 🔹 DARK MODE TOGGLE */
+.dark-mode-btn {
+    background: #333;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dark-mode-btn:hover {
+    background: #555;
 }
 
 body.dark-mode {
@@ -20,70 +511,19 @@ body.dark-mode {
     color: white;
 }
 
-.dark-mode-btn {
-    background: #333;
-    color: white;
-    padding: 8px 12px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+/* 🔹 LOADING SCREEN */
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
 }
 
-.dark-mode-btn:hover {
-    background: #555;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.dark-mode-btn {
-    background: #333;
-    color: white;
-    padding: 8px 12px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.dark-mode-btn:hover {
-    background: #555;
-}
-
-
-.testimonials {
-    text-align: center;
-    background: #f4f4f4;
-    padding: 20px;
-}
-
-.testimonial-btn {
-    background: #008CBA;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-.testimonial-btn:hover {
-    background: #005f75;
-}
-
-
-
-/* 🔹 Hero Section */
+/* 🔹 HERO SECTION */
 .hero {
     text-align: center;
     padding: 60px 20px;
@@ -119,7 +559,21 @@ body.dark-mode {
     background: #388E3C;
 }
 
-/* 🔹 FAQ Section */
+/* 🔹 SEARCH BAR */
+.search-section {
+    margin-top: 20px;
+}
+
+.search-box {
+    width: 80%;
+    max-width: 500px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* 🔹 FAQ SECTION */
 .faq {
     max-width: 800px;
     margin: 40px auto;
@@ -148,33 +602,55 @@ body.dark-mode {
     font-size: 16px;
 }
 
-/* 🔹 Social Media Section */
+/* 🔹 TESTIMONIALS */
+.testimonials {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+.testimonial-btn {
+    background: #008CBA;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.testimonial-btn:hover {
+    background: #005f75;
+}
+
+/* 🔹 SOCIAL MEDIA SECTION */
 .social-media {
     text-align: center;
     margin: 40px auto;
 }
 
-/* 🔹 Centering Social Icons */
+/* 🔹 CENTERING SOCIAL ICONS */
 .social-icons {
     display: flex;
-    justify-content: center; /* Centers icons horizontally */
-    align-items: center; /* Aligns vertically */
-    gap: 20px; /* Space between icons */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     margin-top: 10px;
 }
 
-/* 🔹 Social Icons Styling */
+/* 🔹 SOCIAL ICONS STYLING */
 .social-icons a {
-    text-decoration: none; /* Remove underlines */
-    font-size: 18px; /* Make text readable */
-    color: #008CBA; /* Link color */
+    text-decoration: none;
+    font-size: 18px;
+    color: #008CBA;
 }
 
 .social-icons a:hover {
-    text-decoration: underline; /* Add hover effect */
+    text-decoration: underline;
 }
 
-/* 🔹 Footer */
+/* 🔹 FOOTER */
 .footer {
     background: #333;
     color: white;
@@ -206,29 +682,38 @@ body.dark-mode {
     text-decoration: underline;
 }
 
-/* 🔹 Responsive Design */
+/* 🔹 RESPONSIVE DESIGN */
 @media (max-width: 768px) {
     .hero {
         width: 90%;
     }
+    
     .faq {
         width: 90%;
     }
+    
     .footer-links {
+        display: block;
+    }
+
+    /* Mobile Menu */
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        display: none;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-toggle {
         display: block;
     }
 }
 
-/* 🔹 Full-Screen Background */
-body {
-    background-image: url('../images/Vol.jpg'); /* Make sure the path is correct */
-    background-size: cover; /* Ensures the image covers the whole page */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents tiling */
-    background-attachment: fixed; /* Keeps the background still when scrolling */
-}
 
-/* 🔹 Full-Screen Background */
+/****************************Login Page ************************/
 
 
 /* 🔹 Navigation Bar */
@@ -273,89 +758,140 @@ body {
     border-radius: 5px;
 }
 
-/* 🔹 General Section Styling */
-section {
-    padding: 40px 20px;
-    margin: 20px auto;
-    max-width: 800px;
+/* 🔹 Login Form Container */
+.form-container {
+    max-width: 400px;
+    margin: 120px auto;
+    padding: 20px;
     background: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-/* 🔹 Page Titles */
-h1 {
-    font-size: 32px;
+/* 🔹 Form Titles */
+.form-container h1 {
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-h2 {
-    font-size: 24px;
-    color: #4CAF50;
-    margin-top: 20px;
-    margin-bottom: 10px;
+/* 🔹 Input Fields */
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-/* 🔹 About Page Styling */
-.about-content {
-    text-align: left;
-    line-height: 1.8;
-    padding: 20px;
-    font-size: 18px;
-    color: #555;
-}
-
-.about-content ul, .about-content ol {
-    margin: 15px 0;
-    padding-left: 20px;
-}
-
-.about-content li {
-    margin-bottom: 8px;
-}
-
-/* 🔹 Call to Action Button */
-.cta-button {
-    display: inline-block;
-    background: #008CBA;
+/* 🔹 Submit Button */
+.form-container button {
+    background: #4CAF50;
     color: white;
     padding: 12px 20px;
-    text-decoration: none;
+    border: none;
+    cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
-    margin-top: 20px;
-    transition: 0.3s;
+    width: 100%;
+    margin-top: 10px;
 }
 
-.cta-button:hover {
-    background: #005f75;
+.form-container button:hover {
+    background: #388E3C;
+}
+
+/* 🔹 Links (Login / Sign-Up Toggle) */
+.form-container p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.form-container a {
+    color: #008CBA;
+    text-decoration: none;
+}
+
+.form-container a:hover {
+    text-decoration: underline;
 }
 
 /* 🔹 Responsive Design */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        text-align: center;
-    }
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-    section {
+    .form-container {
         width: 90%;
     }
 }
-/* 🔹 Search Box Styling */
-.search-box {
-    width: 80%;
-    max-width: 500px;
-    padding: 12px;
-    margin-top: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+
+/*********************** Opportunities Page *************************/
+/* 🔹 Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
+
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Ensures all items align properly */
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+
+.nav-links .cta-button {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 15px;  /* Adjust padding */
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: flex; /* Ensures proper alignment */
+    align-items: center; 
+    justify-content: center;
+    height: 100%; /* Match the height of other links */
+}
+
+.nav-links .cta-button:hover {
+    background: white;
+    color: #333;
+}
+
+
+
+
 
 /* 🔹 Header Section */
 .opportunity-header {
@@ -366,6 +902,17 @@ h2 {
     border-radius: 8px;
     margin: 20px auto;
     max-width: 800px;
+}
+
+/* 🔹 Search Box Styling */
+.search-box {
+    width: 80%;
+    max-width: 500px;
+    padding: 12px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 /* 🔹 Centering the Opportunity List */
@@ -395,26 +942,6 @@ h2 {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* 🔹 Responsive Design (For Mobile) */
-@media (max-width: 768px) {
-    .opportunity-list {
-        flex-direction: column; /* Stack cards in a single column */
-        align-items: center; /* Center items */
-    }
-}
-
-
-.opportunity-card h2 {
-    color: #4CAF50;
-    margin-bottom: 10px;
-}
-
-.opportunity-card p {
-    color: #555;
-    font-size: 16px;
-    margin-bottom: 15px;
-}
-
 /* 🔹 Apply Button */
 .apply-button {
     background: #4CAF50;
@@ -424,119 +951,104 @@ h2 {
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
+    margin-top: 10px;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .apply-button:hover {
     background: #388E3C;
 }
 
+/* 🔹 Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin-bottom: 5px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
 /* 🔹 Responsive Design */
 @media (max-width: 768px) {
     .opportunity-list {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stack cards in a single column */
+        align-items: center; /* Center items */
     }
     .search-box {
         width: 90%;
     }
+    .footer-links {
+        display: block;
+    }
 }
 
-/* 🔹 Contact Page Header */
-.contact-header {
-    text-align: center;
-    padding: 40px 20px;
-    background: #008CBA;
-    color: white;
-    border-radius: 8px;
-    margin: 20px auto;
-    max-width: 800px;
-}
-
-/* 🔹 Contact Container */
-.contact-container {
+/***********************Sign-Up Page**********************/
+/* 🔹 Navigation Bar */
+.navbar {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 30px;
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* 🔹 Contact Info */
-.contact-info {
-    width: 45%;
-    text-align: left;
-}
-
-.contact-info h2 {
-    color: #4CAF50;
-    margin-top: 15px;
-}
-
-.contact-info p {
-    font-size: 16px;
-    color: #555;
-}
-
-.contact-info a {
-    color: #008CBA;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-/* 🔹 Contact Form */
-.contact-form {
-    width: 50%;
-}
-
-.contact-form h2 {
-    color: #4CAF50;
-}
-
-.contact-form input,
-.contact-form textarea {
+    align-items: center;
+    background: #333;
+    padding: 15px 20px;
+    position: fixed;
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
+    top: 0;
+    z-index: 1000;
 }
 
-.contact-form button {
-    background: #4CAF50;
+.navbar .logo {
     color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background: #555;
     border-radius: 5px;
-    width: 100%;
-    margin-top: 10px;
 }
 
-.contact-form button:hover {
-    background: #388E3C;
-}
-
-/* 🔹 Responsive Design */
-@media (max-width: 768px) {
-    .contact-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .contact-info, .contact-form {
-        width: 90%;
-    }
-}
 /* 🔹 Form Container */
 .form-container {
     max-width: 400px;
@@ -602,3 +1114,5 @@ h2 {
         width: 90%;
     }
 }
+
+
