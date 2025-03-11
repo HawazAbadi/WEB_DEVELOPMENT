@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,57 +8,81 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+
+    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="logo">Volunteer Platform</div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="About.html">About</a></li>
             <li><a href="Opportunities.html">Find Opportunity</a></li>
+            <p><a href="dashboard.html" class="cta-button">View My Applications</a></p>
             <li><a href="Contact.html">Contact Us</a></li>
             <li><a href="Login.html">Log In / Sign Out</a></li>
         </ul>
     </nav>
 
+    <!-- Search Bar -->
     <section class="opportunity-header">
         <h1>Find Volunteer Opportunities</h1>
         <p>Explore different volunteer roles and make an impact in your community.</p>
-        <input type="text" class="search-box" placeholder="Search for opportunities...">
+        <input type="text" id="searchInput" class="search-box" placeholder="Search for opportunities...">
     </section>
 
-    <section class="opportunity-list">
+    <!-- Opportunities List -->
+    <section class="opportunity-list" id="opportunityList">
+
         <div class="opportunity-card">
             <h2>🌿 Environmental Cleanup</h2>
             <p>Help clean up local parks and beaches. Perfect for nature lovers!</p>
-            <a href=".//pages/environmental-cleanup.html" class="apply-button">View Details</a>
-
+            <a href="./pages/environmental-cleanup.html" class="apply-button">View Details</a>
+            <button onclick="applyForOpportunity('Environmental Cleanup')" class="apply-button">Apply Now</button>
         </div>
 
         <div class="opportunity-card">
             <h2>📚 Tutoring Program</h2>
             <p>Support children with education by tutoring in math, science, or reading.</p>
-            <a href=".//pages/tutoring-program.html" class="apply-button">View Details</a>
+            <a href="./pages/tutoring-program.html" class="apply-button">View Details</a>
+            <button onclick="applyForOpportunity('Tutoring Program')" class="apply-button">Apply Now</button>
         </div>
 
         <div class="opportunity-card">
-        <h2>🏥 Hospital Volunteer</h2>
-        <p>Assist medical staff in non-clinical roles and help patients feel comfortable.</p>
-        <a href=".//pages/hospital-volunteer.html" class="apply-button">View Details</a>
+            <h2>🏥 Hospital Volunteer</h2>
+            <p>Assist medical staff in non-clinical roles and help patients feel comfortable.</p>
+            <a href="./pages/hospital-volunteer.html" class="apply-button">View Details</a>
+            <button onclick="applyForOpportunity('Hospital Volunteer')" class="apply-button">Apply Now</button>
         </div>
 
-    <div class="opportunity-card">
-        <h2>🍲 Food Bank Assistance</h2>
-        <p>Sort, pack, and distribute food to families in need.</p>
-        <a href=".//pages/food-bank.html" class="apply-button">View Details</a>
-    </div>
+        <div class="opportunity-card">
+            <h2>🍲 Food Bank Assistance</h2>
+            <p>Sort, pack, and distribute food to families in need.</p>
+            <a href="./pages/food-bank.html" class="apply-button">View Details</a>
+            <button onclick="applyForOpportunity('Food Bank Assistance')" class="apply-button">Apply Now</button>
+        </div>
 
-    <div class="opportunity-card">
-        <h2>🎨 Art for Healing</h2>
-        <p>Use art and creativity to help children and patients in therapy programs.</p>
-        <a href=".//pages/art-for-healing.html" class="apply-button">View Details</a>
-    </div>
+        <div class="opportunity-card">
+            <h2>🎨 Art for Healing</h2>
+            <p>Use art and creativity to help children and patients in therapy programs.</p>
+            <a href="./pages/art-for-healing.html" class="apply-button">View Details</a>
+            <button onclick="applyForOpportunity('Art for Healing')" class="apply-button">Apply Now</button>
+        </div>
 
-       
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Volunteer Platform. All Rights Reserved.</p>
+        <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src=".//assets/js/script.js"></script>
+    <script src=".//assets/applications.js"></script>
 
 </body>
 </html>

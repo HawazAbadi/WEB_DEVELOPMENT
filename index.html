@@ -17,6 +17,8 @@
             <li><a href="Opportunities.html">Find Opportunity</a></li>
             <li><a href="Contact.html">Contact Us</a></li>
             <li><a href="Login.html">Log In</a> / <a href="signup.html">Sign Up</a></li>
+            <li><a href="dashboard.html">My Applications</a></li>
+            <li><button onclick="toggleDarkMode()" class="dark-mode-btn">🌙 Dark Mode</button></li>
         </ul>
     </nav>
 
@@ -24,8 +26,13 @@
     <header class="hero">
         <h1>Welcome to the Volunteer Platform</h1>
         <p>Find meaningful volunteer opportunities and make an impact in your community.</p>
-        <a href="Opportunities.html" class="cta-button">Find Opportunities</a>
+        <a href="opportunities.html" class="cta-button">Find Opportunities</a>
     </header>
+
+    <!-- Search Bar -->
+    <section class="search-section">
+        <input type="text" id="searchInput" class="search-box" placeholder="Search for volunteer opportunities...">
+    </section>
 
     <!-- FAQ Section -->
     <section class="faq">
@@ -44,6 +51,13 @@
         </div>
     </section>
 
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>What Our Volunteers Say</h2>
+        <p id="testimonialText">"Volunteering changed my life!"</p>
+        <button onclick="nextTestimonial()" class="testimonial-btn">Next</button>
+    </section>
+
     <!-- Social Media Links -->
     <section class="social-media">
         <h2>Follow Us</h2>
@@ -53,18 +67,23 @@
             <a href="#" class="social-icon">Instagram</a>
         </div>
     </section>
-    
 
     <!-- Footer -->
     <footer class="footer">
         <p>&copy; 2025 Volunteer Platform. All Rights Reserved.</p>
         <ul class="footer-links">
-            <li><a href="About.html">About Us</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-            <li><a href="Opportunities.html">Terms of Service</a></li>
-            <li><a href="index.html">Privacy Policy</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
         </ul>
     </footer>
 
+    <!-- JavaScript -->
+    <script src=".//assets/js/script.js"></script>
+
 </body>
 </html>
+
+
+

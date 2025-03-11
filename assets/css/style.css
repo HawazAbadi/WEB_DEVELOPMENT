@@ -15,6 +15,73 @@ body {
     padding-top: 80px; /* Prevents content from hiding under navbar */
 }
 
+body.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode-btn {
+    background: #333;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dark-mode-btn:hover {
+    background: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dark-mode-btn {
+    background: #333;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dark-mode-btn:hover {
+    background: #555;
+}
+
+
+.testimonials {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+.testimonial-btn {
+    background: #008CBA;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.testimonial-btn:hover {
+    background: #005f75;
+}
+
+
 
 /* 🔹 Hero Section */
 .hero {
